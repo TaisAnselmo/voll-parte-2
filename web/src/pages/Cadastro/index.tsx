@@ -54,7 +54,7 @@ export default function Cadastro() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [nome, setNome] = useState('');
-    const [cnpj, setCnpj] = useState('');
+    const [cpf, setCpf] = useState('');
     const [senhaVerificada, setSenhaVerificada] = useState('');
     const [telefone, setTelefone] = useState('');
     const [cep, setCep] = useState('');
@@ -128,10 +128,10 @@ export default function Cadastro() {
                         />
                         <CampoDigitacao
                             tipo="text"
-                            label="CNPJ"
-                            valor={cnpj}
-                            placeholder="Insira seu cnpj"
-                            onChange={setCnpj}
+                            label="CPF"
+                            valor={cpf}
+                            placeholder="Insira seu cpf"
+                            onChange={setCpf}
                         />
                         <CampoDigitacao
                             tipo="email"
